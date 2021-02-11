@@ -3,10 +3,7 @@
   "runtime" : "org.gnome.Platform",
   "runtime-version" : "3.38",
   "sdk" : "org.gnome.Sdk",
-  "sdk-extensions" : [
-    "org.freedesktop.Sdk.Extension.openjdk",
-    "org.freedesktop.Sdk.Extension.openjdk11"
-  ],
+  "sdk-extensions" : [ ],
   "command" : "eclipse",
   "finish-args" : [
     "--require-version=1.0.2",
@@ -17,17 +14,9 @@
     "--socket=wayland",
     "--allow=devel",
     "--socket=session-bus",
-    "--device=dri",
-    "--env=PATH=/app/bin:/app/openjdk-11/bin:/usr/bin"
+    "--device=dri"
   ],
   "modules" : [ {
-    "name" : "openjdk",
-    "buildsystem" : "simple",
-    "build-commands" : [
-      "/usr/lib/sdk/openjdk11/installjdk.sh", "mv /app/jdk /app/openjdk-11",
-      "/usr/lib/sdk/openjdk/installjdk.sh", "mv /app/jdk /app/openjdk-latest"
-    ]
-  }, {
     "name" : "eclipse",
     "buildsystem" : "simple",
     "build-commands" : [
@@ -36,6 +25,8 @@
       "ln -s /app/eclipse/eclipse /app/bin",
       "install -Dm 644 org.eclipse.Javascript.desktop /app/share/applications/org.eclipse.Javascript.desktop",
       "install -Dm 644 org.eclipse.Javascript.metainfo.xml /app/share/metainfo/org.eclipse.Javascript.metainfo.xml",
+      "install -Dm 644 flatpak-dev-shim-1.0.1-SNAPSHOT.jar /app/eclipse/flatpak-dev-shim.jar",
+      "install -Dm 644 flatpak-dev-shim-1.0.1-SNAPSHOT.so /app/lib/libflatpakdevshim.so",
       "mkdir -p /app/share/icons/hicolor/32x32/apps",
       "if [ -f /app/eclipse/plugins/org.eclipse.platform_*/eclipse32.png ] ; then cp -p /app/eclipse/plugins/org.eclipse.platform_*/eclipse32.png /app/share/icons/hicolor/32x32/apps/org.eclipse.Javascript.png ; fi",
       "mkdir -p /app/share/icons/hicolor/64x64/apps",
@@ -45,15 +36,25 @@
       "mkdir -p /app/share/icons/hicolor/256x256/apps",
       "if [ -f /app/eclipse/plugins/org.eclipse.platform_*/eclipse256.png ] ; then cp -p /app/eclipse/plugins/org.eclipse.platform_*/eclipse256.png /app/share/icons/hicolor/256x256/apps/org.eclipse.Javascript.png ; fi",
       "sed -i -e '/osgi.configuration.area/d' /app/eclipse/eclipse.ini",
-      "sed -i -e '/^-vm$/,+1d' /app/eclipse/eclipse.ini",
       "echo \"-Dosgi.configuration.area=@user.home/.var/app/org.eclipse.Javascript/eclipse/configuration\" >> /app/eclipse/eclipse.ini",
-      "echo \"--patch-module=java.base=/app/eclipse/flatpak-dev-shim.jar\" >> /app/eclipse/eclipse.ini"
+      "echo \"--patch-module=java.base=/app/eclipse/flatpak-dev-shim.jar\" >> /app/eclipse/eclipse.ini",
+      "echo \"-Dsun.boot.library.path=/app/lib\" >> /app/eclipse/eclipse.ini"
     ],
     "sources" : [ {
       "type" : "archive",
-      "url" : "https://download.eclipse.org/technology/epp/downloads/release/2020-09/R/eclipse-javascript-2020-09-R-linux-gtk-x86_64.tar.gz",
-      "sha512" : "cc8b1b40f54cb63563271f1127b52c7640973ac894b762ca55daf6bb7aef11ac385f085f90d0b86061ce74d7b7cef59f3fde212003a82c63aed14dc6f565620a",
+      "url" : "https://download.eclipse.org/technology/epp/downloads/release/2020-12/R/eclipse-javascript-2020-12-R-linux-gtk-x86_64.tar.gz",
+      "sha512" : "85357235f86fbf85753155b5b6ff75e3a68d8c719f5b8defca38481336879e0f308b0dddc8d85a9cea58aeef8a45ef6e9b6aa713e60cca362651727fe33fea58",
       "strip-components" : 0
+    }, {
+      "type" : "file",
+      "url" : "https://repo.eclipse.org/content/repositories/linuxtools/org/eclipse/linuxtools/flatpak/flatpak-dev-shim/1.0.1-SNAPSHOT/flatpak-dev-shim-1.0.1-20210128.181650-1.jar",
+      "sha1" : "ae8743fc0efc8790f9851b8b65a7682aebfad895",
+      "dest-filename" : "flatpak-dev-shim-1.0.1-SNAPSHOT.jar"
+    }, {
+      "type" : "file",
+      "url" : "https://repo.eclipse.org/content/repositories/linuxtools/org/eclipse/linuxtools/flatpak/flatpak-dev-shim/1.0.1-SNAPSHOT/flatpak-dev-shim-1.0.1-20210128.181650-1.so",
+      "sha1" : "a6f9157ab15d6cf0d01931778b509694762affc4",
+      "dest-filename" : "flatpak-dev-shim-1.0.1-SNAPSHOT.so"
     }, {
       "type" : "file",
       "path" : "org.eclipse.Javascript.desktop",
@@ -63,7 +64,5 @@
       "path" : "org.eclipse.Javascript.metainfo.xml",
       "dest-filename" : "org.eclipse.Javascript.metainfo.xml"
     } ]
-  },
-  "shim-module.json"
-  ]
+  } ]
 }
