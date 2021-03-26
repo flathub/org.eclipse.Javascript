@@ -20,8 +20,8 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://git.eclipse.org/c/linuxtools/org.eclipse.linuxtools.eclipse-build.git/plain/flatpak/screenshots/org.eclipse.Java-development.png</image>
-      <caption>Java Development Tools</caption>
+      <image>https://github.com/eclipse/wildwebdeveloper/raw/master/documentation-files/wildwebdeveloper-screenshot.png</image>
+      <caption>JavaScript/TypeScript Development Tools</caption>
     </screenshot>
     <screenshot>
       <image>https://git.eclipse.org/c/linuxtools/org.eclipse.linuxtools.eclipse-build.git/plain/flatpak/screenshots/org.eclipse.Java-git.png</image>
@@ -31,23 +31,8 @@
   <developer_name>Eclipse Foundation</developer_name>
   <update_contact>mat.booth@redhat.com</update_contact>
   <releases>
-    <release version="4.18" date="2020-12-16">
-      <url>https://www.eclipse.org/eclipse/news/4.18/</url>
-    </release>
-    <release version="4.17" date="2020-09-16">
-      <url>https://www.eclipse.org/eclipse/news/4.17/</url>
-    </release>
-    <release version="4.16" date="2020-06-17">
-      <url>https://www.eclipse.org/eclipse/news/4.16/</url>
-    </release>
-    <release version="4.15" date="2020-03-18">
-      <url>https://www.eclipse.org/eclipse/news/4.15/</url>
-    </release>
-    <release version="4.14" date="2019-12-18">
-      <url>https://www.eclipse.org/eclipse/news/4.14/</url>
-    </release>
-    <release version="4.13" date="2019-09-18">
-      <url>https://www.eclipse.org/eclipse/news/4.13/</url>
+    <release version="0.11.5" date="2021-03-05">
+      <url>https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md</url>
     </release>
   </releases>
   <kudos>
@@ -56,8 +41,8 @@
     <kudo>UserDocs</kudo>
   </kudos>
   <content_rating type="oars-1.1"/>
-  <url type="bugtracker">https://bugs.eclipse.org/bugs/</url>
-  <url type="homepage">https://www.eclipse.org/</url>
+  <url type="bugtracker">https://github.com/eclipse/wildwebdeveloper</url>
+  <url type="homepage">https://projects.eclipse.org/projects/tools.wildwebdeveloper</url>
   <url type="help">https://help.eclipse.org/</url>
 </component>
 

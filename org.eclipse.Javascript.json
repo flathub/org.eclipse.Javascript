@@ -1,9 +1,8 @@
 {
   "id" : "org.eclipse.Javascript",
   "runtime" : "org.gnome.Platform",
-  "runtime-version" : "3.38",
+  "runtime-version" : "40",
   "sdk" : "org.gnome.Sdk",
-  "sdk-extensions" : [ ],
   "command" : "eclipse",
   "finish-args" : [
     "--require-version=1.7.1",
@@ -42,10 +41,10 @@
     ],
     "sources" : [ {
       "type" : "archive",
-      "url" : "https://download.eclipse.org/technology/epp/downloads/release/2020-12/R/eclipse-javascript-2020-12-R-linux-gtk-x86_64.tar.gz",
-      "sha512" : "85357235f86fbf85753155b5b6ff75e3a68d8c719f5b8defca38481336879e0f308b0dddc8d85a9cea58aeef8a45ef6e9b6aa713e60cca362651727fe33fea58",
+      "url" : "https://download.eclipse.org/wildwebdeveloper/releases/0.11.5/IDEs/eclipseide-wild-web-developer-0.11.5-linux.gtk.x86_64.tar.gz",
+      "sha512" : "df1d75703c037b73656d5c826ea560461a4418d934f582ba531ab7dedbe58017b748fff8e51792d9201cea6d3eacb7e0921fc7cb42ea7b3b67f3c5b9ab06e92d",
       "strip-components" : 0
-    }, {
+    },{
       "type" : "file",
       "url" : "https://repo.eclipse.org/content/repositories/linuxtools/org/eclipse/linuxtools/flatpak/flatpak-dev-shim/1.0.1-SNAPSHOT/flatpak-dev-shim-1.0.1-20210308.114130-2.jar",
       "sha1" : "0e7fdf64ea989f97d5e13515b63144a91fa2d8cf",
