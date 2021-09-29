@@ -1,7 +1,7 @@
 {
   "id" : "org.eclipse.Javascript",
   "runtime" : "org.gnome.Platform",
-  "runtime-version" : "40",
+  "runtime-version" : "41",
   "sdk" : "org.gnome.Sdk",
   "command" : "eclipse",
   "finish-args" : [
@@ -41,8 +41,8 @@
     ],
     "sources" : [ {
       "type" : "archive",
-      "url" : "https://download.eclipse.org/wildwebdeveloper/releases/0.12.0/IDEs/eclipseide-wild-web-developer-0.12.0-linux.gtk.x86_64.tar.gz",
-      "sha512" : "ba9edc17b750b3c74c0c7bb2726b96ca254ffec3dce1e9e2b21c108a5e24e890aea9c529e33cbca4d7df465a6e651b2c4f2b130f6407ebe302317ce8ac8008c4",
+      "url" : "https://download.eclipse.org/wildwebdeveloper/releases/0.13.0/IDEs/eclipseide-wild-web-developer-0.12.1-linux.gtk.x86_64.tar.gz",
+      "sha512" : "4149f3be2d0c462d4525a577371bdfb4aa20ec1e515e43d95578ae73e97e06274cf04ab9890d92ed545493d309956a926acc9375ee321cd8d27f7588856e302a",
       "strip-components" : 0
     },{
       "type" : "file",
