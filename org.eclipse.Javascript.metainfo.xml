@@ -31,13 +31,13 @@
   <developer_name>Eclipse Foundation</developer_name>
   <update_contact>mat.booth@redhat.com</update_contact>
   <releases>
+    <release version="0.13.2" date="2022-01-13">
+      <url>https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#0132</url>
+    </release>
     <release version="0.13.1" date="2021-11-11">
       <url>https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md</url>
     </release>
     <release version="0.13.0" date="2021-09-23">
-      <url>https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md</url>
-    </release>
-    <release version="0.12.0" date="2021-06-22">
       <url>https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md</url>
     </release>
   </releases>
