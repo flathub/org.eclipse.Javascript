@@ -42,7 +42,7 @@
     "sources" : [ {
       "type" : "archive",
       "url" : "https://download.eclipse.org/wildwebdeveloper/releases/0.15.0/IDEs/eclipseide-wild-web-developer-0.14.0-linux.gtk.x86_64.tar.gz",
-      "sha512" : "1800af473a1041c477d7cdaf12f2c7074fe23de65a3a70e153f3ede3c1b570fb74a15da18bdd049479655cff643f9e1cc37c281d5daeca90c5b4d9f5d4e3587f",
+      "sha512" : "48ead63a1433b105dd007b5a79597cb1e0ddbc425b5a971935bcc50c479092feb1b73ffe17f5adccbe30d6ed86582498ec2c7ca874484085f7ff60331ff40479",
       "strip-components" : 0
     },{
       "type" : "file",
