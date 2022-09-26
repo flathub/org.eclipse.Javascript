@@ -1,7 +1,7 @@
 {
   "id" : "org.eclipse.Javascript",
   "runtime" : "org.gnome.Platform",
-  "runtime-version" : "42",
+  "runtime-version" : "43",
   "sdk" : "org.gnome.Sdk",
   "command" : "eclipse",
   "finish-args" : [
