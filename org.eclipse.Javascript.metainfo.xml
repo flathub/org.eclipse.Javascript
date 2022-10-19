@@ -31,6 +31,9 @@
   <developer_name>Eclipse Foundation</developer_name>
   <update_contact>mat.booth@redhat.com</update_contact>
   <releases>
+    <release version="0.15.1" date="2022-10-18">
+      <url>https://github.com/eclipse/wildwebdeveloper/blob/0.15.1/RELEASE_NOTES.md#0151</url>
+    </release>
     <release version="0.15" date="2022-07-29">
       <url>https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#015</url>
     </release>
