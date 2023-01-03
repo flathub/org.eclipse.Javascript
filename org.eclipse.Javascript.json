@@ -43,8 +43,8 @@
     
     "sources" : [ {
       "type" : "archive",
-      "url" : "https://download.eclipse.org/wildwebdeveloper/snapshots/IDEs/eclipseide-wild-web-developer-0.15.1-linux.gtk.x86_64.tar.gz",
-      "sha512" : "68e8e6d41b6fa7ed9861164857047449e99719087aba732213ba7a92243a663c3000199595f8368e7b5f84aa63c9a2b488418d13896646af818081a7f03943c7",
+      "url" : "https://download.eclipse.org/wildwebdeveloper/releases/1.0.1/IDEs/eclipseide-wild-web-developer-1.0.1-linux.gtk.x86_64.tar.gz",
+      "sha512" : "ee18ff08ba2c43028acbbefee0b0a9cdfa0689532fe2b74b7277d4ea1440a55b618a92153d660c8378950c82a2b72b5e3196221ec7c33ac234f0ea4113662991",
       "strip-components" : 0
     },{
       "type" : "file",
