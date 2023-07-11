@@ -43,18 +43,18 @@
     
     "sources" : [ {
       "type" : "archive",
-      "url" : "https://download.eclipse.org/wildwebdeveloper/releases/1.0.1/IDEs/eclipseide-wild-web-developer-1.0.1-linux.gtk.x86_64.tar.gz",
-      "sha512" : "ee18ff08ba2c43028acbbefee0b0a9cdfa0689532fe2b74b7277d4ea1440a55b618a92153d660c8378950c82a2b72b5e3196221ec7c33ac234f0ea4113662991",
+      "url" : "https://download.eclipse.org/wildwebdeveloper/releases/1.2.0/IDEs/eclipseide-wild-web-developer-1.2.0-linux.gtk.x86_64.tar.gz",
+      "sha512" : "4c0f521218883e8ec9c78b45031a97f7bcc1aca1851f497b338d0285008a90fadd337b47bd8d438366df411ab319431f8fa4bbeb72dfc7239c5c7afb2ad444be",
       "strip-components" : 0
     },{
       "type" : "file",
       "url" : "https://repo.eclipse.org/content/repositories/linuxtools/org/eclipse/linuxtools/flatpak/flatpak-dev-shim/1.0.1-SNAPSHOT/flatpak-dev-shim-1.0.1-20211216.040236-6.jar",
-      "sha1" : "bc4577270d1dfd8b2c9e0f3d44281cf541c586d9",
+      "sha512" : "3f7d37555a089a71a1771d90b5f76319609d7524c96bd813a24bc1be3cac1947153934ae59eefd8dbb3f7ff2ad92af7f222be7730df04c6f7306c7e3236f48fb",
       "dest-filename" : "flatpak-dev-shim-1.0.1-SNAPSHOT.jar"
     }, {
       "type" : "file",
       "url" : "https://repo.eclipse.org/content/repositories/linuxtools/org/eclipse/linuxtools/flatpak/flatpak-dev-shim/1.0.1-SNAPSHOT/flatpak-dev-shim-1.0.1-20211216.040236-6.so",
-      "sha1" : "e567f59187d4824ed57fa570b1c1ef19f6f7aa3f",
+      "sha512" : "d2801bfbcce848f09d948ecad2a38489d62caf8cb2365b126ad3a5980c4985f1bda915f889801c16a724c511705e658b84070b18e2aeaa57b300c26d2b585985",
       "dest-filename" : "flatpak-dev-shim-1.0.1-SNAPSHOT.so"
     }, {
       "type" : "file",
