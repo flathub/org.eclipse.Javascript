@@ -31,15 +31,12 @@
   <developer_name>Eclipse Foundation</developer_name>
   <update_contact>mat.booth@redhat.com</update_contact>
   <releases>
-	<release version="1.0.1" date="2022-11-27">
-      <url>https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#101</url>
+	<release version="1.2.0" date="2023-06-30">
+		<url>https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#120</url>
 	</release>
-    <release version="0.15.1" date="2022-10-18">
-      <url>https://github.com/eclipse/wildwebdeveloper/blob/0.15.1/RELEASE_NOTES.md#0151</url>
-    </release>
-    <release version="0.15" date="2022-07-29">
-      <url>https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#015</url>
-    </release>
+	<release version="1.0.1" date="2022-11-27">
+		<url>https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#101</url>
+	</release>
   </releases>
   <kudos>
     <kudo>HiDpiIcon</kudo>
@@ -47,7 +44,7 @@
     <kudo>UserDocs</kudo>
   </kudos>
   <content_rating type="oars-1.1"/>
-  <url type="bugtracker">https://github.com/eclipse/wildwebdeveloper</url>
+  <url type="bugtracker">https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper</url>
   <url type="homepage">https://projects.eclipse.org/projects/tools.wildwebdeveloper</url>
   <url type="help">https://help.eclipse.org/</url>
 </component>
